@@ -27,16 +27,31 @@ let days = [
 	["Sunday","Monday","Tuesday","Wendsday","Thursday","Friday","Saturday"]
 ];
 
-if (lang === "Рус") {
-	days[0].forEach((element) => {
-		console.log(element);
-	});
-	} else if (lang ==="Англ") {
-		days[1].forEach((element) => {
-			console.log(element);
+// if (lang === "Рус") {
+// 	days[0].forEach((element) => {
+// 		console.log(element);
+// 	});
+// 	} else if (lang ==="Англ") {
+// 		days[1].forEach((element) => {
+// 			console.log(element);
+// 		});
+// 	} else if (lang === "") {
+// 		console.log("Вы ничего не ввели. Обновите страницу и попробуйте еще раз");
+// 	} else {
+// 		console.log("Вы ввели не то слово, либо ввели с маленькой буквы, либо нажали отмена. Обновите страницу и попробуйте еще раз");
+// 	}
+
+switch (lang) {
+	case "Рус":
+		days[0].forEach((elem) => {
+			console.log(elem);
 		});
-	} else if (lang === "") {
-		console.log("Вы ничего не ввели. Обновите страницу и попробуйте еще раз");
-	} else {
-		console.log("Вы ввели не то слово, либо ввели с маленькой буквы, либо нажали отмена. Обновите страницу и попробуйте еще раз");
-	}
+		break;
+	case "Англ": 
+		days[0].forEach((elem) => {
+			console.log(elem);
+		});
+		break;
+	default:
+		console.log("Вы ввели не то слово или ничего не ввели,либо ввели с маленькой буквы, либо нажали отмена. Обновите страницу и попробуйте еще раз");
+}
