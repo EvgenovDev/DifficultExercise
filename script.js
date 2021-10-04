@@ -19,7 +19,7 @@
 
 // console.log ("Первые две цифры от числа " + cubeRootNum + " -> " + (cubeRootNum.toString()).substring(0,2));
 
-let lang = prompt("Введите язык на котором хотите увидеть названия дней недели", "Рус-для русского / Англ - для английского");
+let lang = prompt("Введите язык на котором хотите увидеть названия дней недели", "ru-для русского / en - для английского");
 
 // Массив для решений А и Б,для решения С внизу есть другой массив
 let days = [
@@ -28,11 +28,11 @@ let days = [
 ];
 
 // Вариант - А
-if (lang === "Рус") {
+if (lang === "ru") {
 	days[0].forEach((element) => {
 		console.log(element);
 	});
-	} else if (lang ==="Англ") {
+	} else if (lang ==="en") {
 		days[1].forEach((element) => {
 			console.log(element);
 		});
@@ -44,12 +44,12 @@ if (lang === "Рус") {
 
 //Вариант - Б
 // switch (lang) {
-// 	case "Рус":
+// 	case "ru":
 // 		days[0].forEach((elem) => {
 // 			console.log(elem);
 // 		});
 // 		break;
-// 	case "Англ": 
+// 	case "en": 
 // 		days[0].forEach((elem) => {
 // 			console.log(elem);
 // 		});
@@ -60,8 +60,8 @@ if (lang === "Рус") {
 
 // Вариант-С
 // let days1 = [];
-// days1["Рус"] = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресение"];
-// days1["Англ"] = ["Sunday","Monday","Tuesday","Wendsday","Thursday","Friday","Saturday"];
+// days1["ru"] = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресение"];
+// days1["en] = ["Sunday","Monday","Tuesday","Wendsday","Thursday","Friday","Saturday"];
 // console.log(days1[lang]);
 let namePerson = prompt("Введите полное имя с большой буквы", "Роман");
 
