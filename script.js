@@ -43,26 +43,29 @@ if (lang === "ru") {
 	}
 
 //Вариант - Б
-// switch (lang) {
-// 	case "ru":
-// 		days[0].forEach((elem) => {
-// 			console.log(elem);
-// 		});
-// 		break;
-// 	case "en": 
-// 		days[0].forEach((elem) => {
-// 			console.log(elem);
-// 		});
-// 		break;
-// 	default:
-// 		console.log("Вы ввели не то слово или ничего не ввели,либо ввели с маленькой буквы, либо нажали отмена. Обновите страницу и попробуйте еще раз");
-// }
+switch (lang) {
+	case "ru":
+		days[0].forEach((elem) => {
+			console.log(elem);
+		});
+		break;
+	case "en": 
+		days[1].forEach((elem) => {
+			console.log(elem);
+		});
+		break;
+	default:
+		console.log("Вы ввели не то слово или ничего не ввели,либо ввели с маленькой буквы, либо нажали отмена. Обновите страницу и попробуйте еще раз");
+}
 
 // Вариант-С
-// let days1 = [];
-// days1["ru"] = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресение"];
-// days1["en] = ["Sunday","Monday","Tuesday","Wendsday","Thursday","Friday","Saturday"];
-// console.log(days1[lang]);
+let days1 = [];
+days1["ru"] = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресение"];
+days1["en"] = ["Sunday","Monday","Tuesday","Wendsday","Thursday","Friday","Saturday"];
+
+days1[lang].forEach((elem) => {
+	console.log(elem);
+});
 let namePerson = prompt("Введите полное имя с большой буквы", "Роман");
 
 namePerson = namePerson === "Артем" ? console.log("Директор") : namePerson === "Александр" ? console.log("Преподователь") : console.log("Студент");
